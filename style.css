@@ -1,13 +1,38 @@
-body{
+body {
   padding: 0;
   margin: 0;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Titillium Web', sans-serif;
 }
 
 /* ------------ container ------------ */
-.container{
-  padding:10px;
-  width:380px;
-  margin:0 auto;
+
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+.circles-challenge {
+  margin-left: 25%;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 50px;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
 }
