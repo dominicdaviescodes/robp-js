@@ -63,3 +63,11 @@ document.getElementById('yellow').onclick = function () {
 document.getElementById('blue').onclick = function () {
   document.getElementById('blue').style.display = 'none';
 };
+
+// lecture-100
+
+document.getElementById('textChanger').onclick = function () {
+  var textEntered = '';
+  textEntered = document.getElementById('textInput').value;
+  document.getElementById('newTextInput').innerHTML = textEntered;
+};

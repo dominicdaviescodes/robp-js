@@ -14,7 +14,7 @@ body {
 }
 
 .circles-challenge {
-  margin-left: 25%;
+  margin: 75px 0;
 }
 
 .circle {
@@ -22,7 +22,7 @@ body {
   width: 100px;
   border-radius: 50%;
   float: left;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 #red {
@@ -35,4 +35,12 @@ body {
 
 #blue {
   background-color: blue;
+}
+
+.clear-circles {
+  clear: both;
+}
+
+.lecture-100 {
+  margin-top: 100px;
 }
