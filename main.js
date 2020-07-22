@@ -71,3 +71,27 @@ document.getElementById('textChanger').onclick = function () {
   textEntered = document.getElementById('textInput').value;
   document.getElementById('newTextInput').innerHTML = textEntered;
 };
+
+// Lecture 102 - Arrays
+
+var myArray = new Array();
+
+myArray[0] = "pizza";
+myArray[1] = "chocolate";
+// alert(myArray);
+
+
+var tweets = ["tweet 1", "tweet 2", "tweet 3"];
+
+console.log(tweets);
+
+// Add an item to the end of an Array
+tweets.push("tweet 4");
+
+console.log(tweets);
+
+// Remove an item from the Array
+// parameters
+// no. of item where we want to start deleting, how many items
+tweets.splice(1, 1);
+console.log(tweets);
