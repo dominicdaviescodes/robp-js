@@ -114,3 +114,31 @@ document.getElementById('checkWord').onclick = function () {
     alert('sorry, try again.');
   }
 }
+
+//107 how many fingers?
+
+// inputGuess  input
+// checkNumber  btn
+
+// document.getElementById('checkNumber').onclick = function () {
+//   var guess = document.getElementById('inputGuess').value;
+//   // random value generated 
+//   var numberOfFingers = Math.floor(Math.random() * 5 + 1);
+
+//   if (guess === numberOfFingers) {
+//     alert('Congratulations, you got it!');
+//   } else {
+//     alert('sorry, try again.');
+//   }
+// }
+
+document.getElementById("checkGuess").onclick = function () {
+  var randomNumber = Math.random();
+  randomNumber = randomNumber * 6;
+  randomNumber = Math.floor(randomNumber);
+  if (document.getElementById('guess').value == randomNumber) {
+    alert('Correct!');
+  } else {
+    alert('Sorry The number was ' + randomNumber);
+  }
+}
