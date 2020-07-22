@@ -95,3 +95,22 @@ console.log(tweets);
 // no. of item where we want to start deleting, how many items
 tweets.splice(1, 1);
 console.log(tweets);
+
+
+// 104 if statements
+
+// what is the magic word exercise
+
+
+
+
+document.getElementById('checkWord').onclick = function () {
+  var guess = document.getElementById('enterWord').value;
+  var magicWord = "superman";
+
+  if (guess === magicWord) {
+    alert('Congratulations, you guessed it!');
+  } else {
+    alert('sorry, try again.');
+  }
+}
