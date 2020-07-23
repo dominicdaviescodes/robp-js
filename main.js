@@ -76,44 +76,39 @@ document.getElementById('textChanger').onclick = function () {
 
 var myArray = new Array();
 
-myArray[0] = "pizza";
-myArray[1] = "chocolate";
+myArray[0] = 'pizza';
+myArray[1] = 'chocolate';
 // alert(myArray);
 
+// var tweets = ['tweet 1', 'tweet 2', 'tweet 3'];
 
-var tweets = ["tweet 1", "tweet 2", "tweet 3"];
-
-console.log(tweets);
+// console.log(tweets);
 
 // Add an item to the end of an Array
-tweets.push("tweet 4");
+// tweets.push('tweet 4');
 
-console.log(tweets);
+// console.log(tweets);
 
 // Remove an item from the Array
 // parameters
 // no. of item where we want to start deleting, how many items
-tweets.splice(1, 1);
-console.log(tweets);
-
+// tweets.splice(1, 1);
+// console.log(tweets);
 
 // 104 if statements
 
 // what is the magic word exercise
 
-
-
-
 document.getElementById('checkWord').onclick = function () {
   var guess = document.getElementById('enterWord').value;
-  var magicWord = "superman";
+  var magicWord = 'superman';
 
   if (guess === magicWord) {
     alert('Congratulations, you guessed it!');
   } else {
     alert('sorry, try again.');
   }
-}
+};
 
 //107 how many fingers?
 
@@ -122,7 +117,7 @@ document.getElementById('checkWord').onclick = function () {
 
 // document.getElementById('checkNumber').onclick = function () {
 //   var guess = document.getElementById('inputGuess').value;
-//   // random value generated 
+//   // random value generated
 //   var numberOfFingers = Math.floor(Math.random() * 5 + 1);
 
 //   if (guess === numberOfFingers) {
@@ -132,7 +127,7 @@ document.getElementById('checkWord').onclick = function () {
 //   }
 // }
 
-document.getElementById("checkGuess").onclick = function () {
+document.getElementById('checkGuess').onclick = function () {
   var randomNumber = Math.random();
   randomNumber = randomNumber * 6;
   randomNumber = Math.floor(randomNumber);
@@ -141,4 +136,19 @@ document.getElementById("checkGuess").onclick = function () {
   } else {
     alert('Sorry The number was ' + randomNumber);
   }
+};
+
+// 108. Loops
+
+// example to loop 5 times
+// for (var i = 5; i > 0; i--) {
+// run this code
+//   alert(i);
+// }
+
+var tweetLoops = ['tweet 1', 'tweet 2', 'tweet 3'];
+
+for (var i = 0; i < tweetLoops.length; i++) {
+  console.log(tweetLoops[i]);
+  // alert(tweetLoops[i]);
 }
