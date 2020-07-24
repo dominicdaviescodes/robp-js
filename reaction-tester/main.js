@@ -4,8 +4,11 @@ var start = new Date().getTime();
 function makeShapeAppear() {
   var top = Math.random() * 400;
   var left = Math.random() * 600;
+  var width = (Math.random() * 200) + 25;
   document.getElementById('shape').style.top = top + "px";
   document.getElementById('shape').style.left = left + "px";
+  document.getElementById('shape').style.width = width + "px";
+  document.getElementById('shape').style.height = width + "px";
   document.getElementById('shape').style.display = 'block';
   start = new Date().getTime();
 }
