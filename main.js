@@ -127,16 +127,16 @@ document.getElementById('checkWord').onclick = function () {
 //   }
 // }
 
-document.getElementById('checkGuess').onclick = function () {
-  var randomNumber = Math.random();
-  randomNumber = randomNumber * 6;
-  randomNumber = Math.floor(randomNumber);
-  if (document.getElementById('guess').value == randomNumber) {
-    alert('Correct!');
-  } else {
-    alert('Sorry The number was ' + randomNumber);
-  }
-};
+// document.getElementById('checkGuess').onclick = function () {
+//   var randomNumber = Math.random();
+//   randomNumber = randomNumber * 6;
+//   randomNumber = Math.floor(randomNumber);
+//   if (document.getElementById('guess').value == randomNumber) {
+//     alert('Correct!');
+//   } else {
+//     alert('Sorry The number was ' + randomNumber);
+//   }
+// };
 
 // 108. Loops
 
@@ -146,9 +146,50 @@ document.getElementById('checkGuess').onclick = function () {
 //   alert(i);
 // }
 
-var tweetLoops = ['tweet 1', 'tweet 2', 'tweet 3'];
+// var tweetString = ''; // tell js we are starting with an empty string, or will return undefined first.
+// var tweetLoops = ['tweet 1', 'tweet 2', 'tweet 3'];
 
-for (var i = 0; i < tweetLoops.length; i++) {
-  console.log(tweetLoops[i]);
-  // alert(tweetLoops[i]);
-}
+// for (var i = 0; i < tweetLoops.length; i++) {
+//   tweetString = tweetString + '<p>' + tweetLoops[i] + '</p>';
+// }
+// document.getElementById('tweetDiv').innerHTML = tweetString;
+
+// change to a while loop
+
+// var tweetString = '';
+// var tweetLoops = ['tweet 1', 'tweet 2', 'tweet 3'];
+
+// var i = 0;
+
+// while (i < tweetLoops.length) {
+//   tweetString = tweetString + '<p>' + tweetLoops[i] + '</p>';
+//   i++;
+// }
+// document.getElementById('tweetDiv').innerHTML = tweetString;
+
+// another guessing game
+
+document.getElementById('pcGuess').onclick = function () {
+  var ourNumber = document.getElementById('ourNumber').value;
+  var gotIt = false;
+  var numberOfGuesses = 1;
+  while (gotIt == false) {
+    var pcRandomNumber = Math.random();
+    pcRandomNumber = pcRandomNumber * 6;
+    pcRandomNumber = Math.floor(pcRandomNumber);
+    if (pcRandomNumber == ourNumber) {
+      // pc is correct
+      gotIt = true;
+      alert(
+        'Got it! It was a ' +
+          pcRandomNumber +
+          '.  It took me ' +
+          numberOfGuesses +
+          ' guesses'
+      );
+    } else {
+      // pc is wrong.
+      numberOfGuesses++;
+    }
+  }
+};
