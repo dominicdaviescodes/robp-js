@@ -2,6 +2,8 @@
 var start = new Date().getTime();
 
 function makeShapeAppear() {
+  var top = Math.random() * 400;
+  document.getElementById('shape').style.top = top + "px";
   document.getElementById('shape').style.display = 'block';
   start = new Date().getTime();
 }
