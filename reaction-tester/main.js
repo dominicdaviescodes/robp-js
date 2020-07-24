@@ -6,7 +6,7 @@ function makeShapeAppear() {
   start = new Date().getTime();
 }
 
-setTimeout(makeShapeAppear, 1000);
+setTimeout(makeShapeAppear, Math.random() * 2000);
 
 document.getElementById('shape').onclick = function () {
   document.getElementById('shape').style.display = "none";
