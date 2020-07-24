@@ -1,4 +1,13 @@
+// when page loads, shape appears, timer starts
 var start = new Date().getTime();
+
+function makeShapeAppear() {
+  document.getElementById('shape').style.display = 'block';
+  start = new Date().getTime();
+}
+
+setTimeout(makeShapeAppear, 1000);
+
 document.getElementById('shape').onclick = function () {
   document.getElementById('shape').style.display = "none";
   var end = new Date().getTime();
