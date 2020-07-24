@@ -3,7 +3,9 @@ var start = new Date().getTime();
 
 function makeShapeAppear() {
   var top = Math.random() * 400;
+  var left = Math.random() * 600;
   document.getElementById('shape').style.top = top + "px";
+  document.getElementById('shape').style.left = left + "px";
   document.getElementById('shape').style.display = 'block';
   start = new Date().getTime();
 }
